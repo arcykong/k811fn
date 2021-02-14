@@ -18,5 +18,9 @@ k811fnCLI.exe: k811fnCLI.cpp stdafx.cpp ../../hid.c
 	$(CXX) -o $@ $? \
 		$(CFLAGS) $(LDFLAGS) -l setupapi
 
+k780fnCLI.exe: k780fnCLI.cpp stdafx.cpp ../../hid.c
+	$(CXX) -o $@ $? \
+		$(CFLAGS) $(LDFLAGS) -l setupapi
+
 clean:
 	rm -f *.exe
